@@ -5,11 +5,13 @@ print '
 </div>
 <div id="center_elementi">
 <nav>
-  <a href="P4.html">Početna stranica</a> |
-  <a href="P5.html">Novosti</a> |
-  <a href="P7.html">Kontakt</a> |
-  <a href="P9.html">O Nama</a> |
-  <a href="P8.html">Galerija</a> |
+  <a href="index.php?menu=1">Početna stranica</a> |
+  <a href="index.php?menu=2">Novosti</a> |
+  <a href="index.php?menu=3">Kontakt</a> |
+  <a href="index.php?menu=4">O Nama</a> |
+  <a href="index.php?menu=5">Galerija</a> |
+  <a href="index.php?menu=6">Registracija</a> |
+  <a href="index.php?menu=7">Prijava</a> |
 </nav>
 </div>';
 ?>
