@@ -5,7 +5,7 @@
     $error = array();
 
     //konekcija s database-om
-    $db = mysqli_connect('localhost', 'root', '', 'kfakin');
+    $db = mysqli_connect('localhost', 'root','', 'kfakin');
 
     //ako se klikne "register"
     if (isset($_POST['register'])) {

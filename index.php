@@ -1,11 +1,26 @@
 <?php
+	# Stop Hacking attempt
+	define('__APP__', TRUE);
+	
+	# Start session
+    session_start();
+	
+	# Database connection
+	include ("dbconn.php");
+
 	#show errors
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
 	
 	# Variables MUST BE INTEGERS
-    if(isset($_GET['menu'])) { $menu = (int)$_GET['menu']; }
+    if(isset($_GET['menu'])) { $menu   = (int)$_GET['menu']; }
+	if(isset($_GET['action'])) { $action   = (int)$_GET['action']; }
+	
+	# Variables MUST BE STRINGS A-Z
+    if(!isset($_POST['_action_']))  { $_POST['_action_'] = FALSE;  }
+	
+	if (!isset($menu)) { $menu = 1; }
 	
 ?>
 
